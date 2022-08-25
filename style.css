@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+
+.bg {
+    min-height: 100vh;
+    background: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+td {
+    border: 7px solid #fff;
+    height: 140px;
+    width: 140px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 70px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.pX {
+    text-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green;
+}
+
+.pY {
+    text-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red;
+}
+
+@keyframes tt {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-13px);
+    }
+
+    40% {
+        transform: translateX(13px);
+    }
+
+    60% {
+        transform: translateX(-8px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: unset;
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+.endgame button {
+    color: white;
+    background: leon;
+    padding: 7px 24px;
+    background: green;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.endgame {
+    display: none;
+    justify-content: space-around;
+    width: 420px;
+    background-color: rgb(41 67 255);
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    transform: translate(-50%, -3%);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.selectSym {
+    display: none;
+    width: 420px;
+    background-color: rgb(41 67 255);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    min-height: 450px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.selectSym button {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 50px;
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+.selectSym button:first-of-type {
+    margin-right: 10px;
+    text-shadow: 0 0 10px red, 0 0 2px red;
+}
+
+.selectSym button:last-of-type {
+    margin-left: 10px;
+    text-shadow: 0 0 10px green, 0 0 2px green;
+}
+
+
+@media only screen and (max-width:425px) {
+   
+    td{
+        height: 100px;
+    }
+    table{
+        width: 300px;
+    }
+
+    .selectSym {
+        width: 300px;
+        min-height: 308px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+   
+    td{
+        height: 80px;
+    }
+    table{
+        width: 270px;
+    }
+
+    .selectSym {
+        width: 270px;
+        min-height: 308px;
+    }
+}
