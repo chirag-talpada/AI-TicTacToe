@@ -154,6 +154,21 @@ table tr td:last-child {
 }
 
 
+@media only screen and (max-width:768px) {
+   
+    td{
+        height: 100px;
+    }
+    table{
+        width: 300px;
+    }
+
+    .selectSym {
+        width: 300px;
+        min-height: 308px;
+    }
+}
+
 @media only screen and (max-width:425px) {
    
     td{
